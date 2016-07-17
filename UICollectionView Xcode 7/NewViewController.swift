@@ -14,15 +14,17 @@ class NewViewController: UIViewController
 {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labelView: UILabel!
+    
     var image = UIImage()
-    var label = UILabel()
+    var avatar_link:String?
+    var type_link:String?
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        self.imageView.image = self.image
-        self.labelView = self.label
+        labelView.text = self.type_link
+        imageView.sd_setImageWithURL(NSURL(string: avatar_link!))
 
     }
 

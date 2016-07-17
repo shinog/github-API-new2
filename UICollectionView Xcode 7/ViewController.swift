@@ -22,6 +22,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     var articles: [[String: String?]] = []
     let github_url = "https://api.github.com/users";
+    var avatar_link: String = ""
 
     override func viewDidLoad()
     {
@@ -43,7 +44,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 json.forEach { (_, json) in
                     let article: [String: String?] = [
                         "avatar": json["avatar_url"].string,
-                        "name": json["login"].string
+                        "name": json["login"].string,
+                        "type": json["type"].string
                     ]
                     self.articles.append(article)
                 }
@@ -94,9 +96,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             
             let vc = segue.destinationViewController as! NewViewController
             
-            vc.image = self.imageArray[indexPath.row]!
             vc.title = article["name"]!
-            vc.label.text = article["type"]!
+            vc.avatar_link = article["avatar"]!
+            vc.type_link = article["type"]!
         }
     }
     

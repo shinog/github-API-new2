@@ -103,8 +103,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-Iy-VQm">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx3-JV-v0x">
-                                <rect key="frame" x="0.0" y="553" width="600" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKA-Em-NQS">
+                                <rect key="frame" x="20" y="571" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -112,19 +112,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hx3-JV-v0x" firstAttribute="top" secondItem="PIl-Mx-J12" secondAttribute="bottom" constant="489" id="2Sw-HI-tsf"/>
                             <constraint firstItem="Wtj-Iy-VQm" firstAttribute="top" secondItem="kRZ-SS-z6b" secondAttribute="top" id="CE2-D5-0UX"/>
                             <constraint firstItem="Wtj-Iy-VQm" firstAttribute="leading" secondItem="kRZ-SS-z6b" secondAttribute="leading" id="Ciw-3f-sp9"/>
-                            <constraint firstItem="hx3-JV-v0x" firstAttribute="trailing" secondItem="Wtj-Iy-VQm" secondAttribute="trailing" id="Dnf-Ae-awa"/>
-                            <constraint firstItem="hx3-JV-v0x" firstAttribute="bottom" secondItem="k1e-aN-j1F" secondAttribute="top" id="Gyi-uJ-pgl"/>
-                            <constraint firstItem="hx3-JV-v0x" firstAttribute="leading" secondItem="Wtj-Iy-VQm" secondAttribute="leading" id="LeH-Co-nCj"/>
                             <constraint firstItem="Wtj-Iy-VQm" firstAttribute="bottom" secondItem="k1e-aN-j1F" secondAttribute="top" id="WIv-hl-fAm"/>
                             <constraint firstAttribute="trailing" secondItem="Wtj-Iy-VQm" secondAttribute="trailing" id="pyN-KI-wzX"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Wtj-Iy-VQm" id="12d-zD-gOe"/>
-                        <outlet property="labelView" destination="hx3-JV-v0x" id="Fdr-QB-7XM"/>
+                        <outlet property="labelView" destination="MKA-Em-NQS" id="pap-5I-U1F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xN-1Z-mRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
