@@ -72,9 +72,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
         let article = articles[indexPath.row]
         
-        cell.imageView?.image = self.imageArray[indexPath.row]
         cell.titleLabel?.text = article["name"]!
-                
+        cell.imageView.sd_setImageWithURL(NSURL(string: article["avatar"]!!))
+        
         return cell
     }
 

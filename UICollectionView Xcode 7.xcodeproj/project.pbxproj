@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1258556D38E8FDABFFBB67F3 /* Pods_UICollectionView_Xcode_7.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0945A78D8890B8508C59CD11 /* Pods_UICollectionView_Xcode_7.framework */; };
-		7779E8B31D3B62400032F467 /* UnderComputer-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 7779E8B21D3B62400032F467 /* UnderComputer-48.png */; };
+		7779E8BB1D3C75A40032F467 /* UnderComputer-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 7779E8BA1D3C75A40032F467 /* UnderComputer-48.png */; };
 		786F8BEF1B4440060033E657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F8BEE1B4440060033E657 /* AppDelegate.swift */; };
 		786F8BF11B4440060033E657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F8BF01B4440060033E657 /* ViewController.swift */; };
 		786F8BF41B4440060033E657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786F8BF21B4440060033E657 /* Main.storyboard */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		0945A78D8890B8508C59CD11 /* Pods_UICollectionView_Xcode_7.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionView_Xcode_7.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9420686908656E0AF72432 /* Pods-UICollectionView Xcode 7.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView Xcode 7.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UICollectionView Xcode 7/Pods-UICollectionView Xcode 7.debug.xcconfig"; sourceTree = "<group>"; };
-		7779E8B21D3B62400032F467 /* UnderComputer-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UnderComputer-48.png"; path = "../../UnderComputer-48.png"; sourceTree = "<group>"; };
+		7779E8BA1D3C75A40032F467 /* UnderComputer-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UnderComputer-48.png"; sourceTree = SOURCE_ROOT; };
 		77ECBDA61D32145500B22D8A /* hogevideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hogevideo.mp4; sourceTree = "<group>"; };
 		786F8BEB1B4440060033E657 /* UICollectionView Xcode 7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionView Xcode 7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		786F8BEE1B4440060033E657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				786F8BF21B4440060033E657 /* Main.storyboard */,
 				786F8BF51B4440060033E657 /* Assets.xcassets */,
 				786F8BF71B4440060033E657 /* LaunchScreen.storyboard */,
-				7779E8B21D3B62400032F467 /* UnderComputer-48.png */,
+				7779E8BA1D3C75A40032F467 /* UnderComputer-48.png */,
 				77ECBDA51D32144400B22D8A /* Supporting Files */,
 			);
 			path = "UICollectionView Xcode 7";
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				786F8BF91B4440060033E657 /* LaunchScreen.storyboard in Resources */,
-				7779E8B31D3B62400032F467 /* UnderComputer-48.png in Resources */,
+				7779E8BB1D3C75A40032F467 /* UnderComputer-48.png in Resources */,
 				786F8BF61B4440060033E657 /* Assets.xcassets in Resources */,
 				786F8BF41B4440060033E657 /* Main.storyboard in Resources */,
 			);
