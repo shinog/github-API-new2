@@ -101,24 +101,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wtj-Iy-VQm">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="509"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKA-Em-NQS">
-                                <rect key="frame" x="20" y="571" width="560" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKA-Em-NQS">
+                                <rect key="frame" x="20" y="529" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1f-eK-sIK">
+                                <rect key="frame" x="263" y="562" width="75" height="30"/>
+                                <state key="normal" title="お気に入り">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFavorite:" destination="HYj-z7-UpI" eventType="touchDown" id="way-j7-dBX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MKA-Em-NQS" firstAttribute="centerX" secondItem="o1f-eK-sIK" secondAttribute="centerX" id="9XL-xC-5g5"/>
                             <constraint firstItem="Wtj-Iy-VQm" firstAttribute="top" secondItem="kRZ-SS-z6b" secondAttribute="top" id="CE2-D5-0UX"/>
                             <constraint firstItem="Wtj-Iy-VQm" firstAttribute="leading" secondItem="kRZ-SS-z6b" secondAttribute="leading" id="Ciw-3f-sp9"/>
                             <constraint firstItem="Wtj-Iy-VQm" firstAttribute="bottom" secondItem="k1e-aN-j1F" secondAttribute="top" id="WIv-hl-fAm"/>
+                            <constraint firstItem="k1e-aN-j1F" firstAttribute="top" secondItem="o1f-eK-sIK" secondAttribute="bottom" constant="8" symbolic="YES" id="Zvt-Nk-WvU"/>
+                            <constraint firstItem="o1f-eK-sIK" firstAttribute="top" secondItem="MKA-Em-NQS" secondAttribute="bottom" constant="12" id="a3k-LZ-Ug7"/>
+                            <constraint firstItem="MKA-Em-NQS" firstAttribute="leading" secondItem="kRZ-SS-z6b" secondAttribute="leadingMargin" id="knq-V7-KtK"/>
+                            <constraint firstItem="MKA-Em-NQS" firstAttribute="centerX" secondItem="Wtj-Iy-VQm" secondAttribute="centerX" id="mSj-UH-mmN"/>
                             <constraint firstAttribute="trailing" secondItem="Wtj-Iy-VQm" secondAttribute="trailing" id="pyN-KI-wzX"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonView" destination="o1f-eK-sIK" id="6J3-8V-TsQ"/>
                         <outlet property="imageView" destination="Wtj-Iy-VQm" id="12d-zD-gOe"/>
                         <outlet property="labelView" destination="MKA-Em-NQS" id="pap-5I-U1F"/>
                     </connections>
