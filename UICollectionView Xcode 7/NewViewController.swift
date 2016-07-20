@@ -29,7 +29,7 @@ class NewViewController: UIViewController
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         
-        senderId = "1234"
+        senderId = "1235"
         
         let ref = FIRDatabase.database().reference()
         ref.observeEventType(.Value, withBlock: { snapshot in
